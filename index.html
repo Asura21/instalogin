@@ -18,6 +18,7 @@
 			height: 340px;
 			margin:auto;
 			margin-top: 30px;
+			border:1px solid #e6e6e6;
 		}
 		.kotak-input>input{
 			width: 95%;		
@@ -39,8 +40,7 @@
 			margin-right: 10%;
 		}
 		.text-ig{
-			margin-top: 30px;
-			margin-bottom: 5px;
+			margin-bottom: 8px;
 		}
 		.foto-ig{
 			margin-top: 40px;
@@ -50,6 +50,7 @@
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
+			margin-bottom: 30px;
 		}
 		#info-text{
 			text-align: center;
@@ -67,12 +68,23 @@
 			padding: 7px;
 			margin-top: 20px;
 		}
+		.kotak-bawah-ig{
+			border:1px solid #e6e6e6;
+			background-color: #ffffff;
+			padding: 10px;
+			width: 340px;
+			margin:auto;
+			margin-top: 20px;
+		}
 		@media only screen and (max-width: 680px) {
-		 	.kotak-ig{
+		 	.kotak-ig,.kotak-bawah-ig{
 		 		max-width: 290px;
 		 		width: 290px;
 		 	}
-		 }
+		}
+		p{
+			margin-bottom: 0;
+		}
 	</style>
 </head>
 <body>
@@ -81,7 +93,7 @@
 			<img class="logo-ig" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="">
 		</div>
 		<div class="text-ig">
-			<span id="info-text">Masukkan alamat email, dan password anda</span>
+			<p id="info-text">Masukkan alamat email, dan password anda</p>
 		</div>
 		<div class="form-ig">
 			<form action="	">
@@ -94,7 +106,14 @@
 			</form>
 		</div>
 		<div class="button">
-			<button class="daftar-ig">Daftar</button>
+			<button class="daftar-ig">Masuk</button>
+		</div>
+	</div>
+	<div class="kotak-bawah-ig">	
+		<div class="text-ig">	
+			<p id="info-text">
+				Belum punya akun ? <a href="">Daftar</a>
+			</p>
 		</div>
 	</div>
 	

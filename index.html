@@ -1,121 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Log-In</title>
-	<meta name="viewport" content="width=device, initial-scale=1.0" />
-	<link rel="stylesheet" href="uikit.css">
-	<script src="uikit.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<style>	
-		html{
-			background-color: #fafafafa;
-		}
-		.kotak-ig{
-			background-color: #ffffff;
-			padding: 10px;
-			width: 340px;
-			height: 340px;
-			margin:auto;
-			margin-top: 30px;
-			border:1px solid #e6e6e6;
-		}
-		.kotak-input>input{
-			width: 95%;		
-			margin-top: 12px;
-			border: 1px solid #e6e6e6;
-			max-height: 21px;
-			height: 21px;
-			padding: 6px;
-			border-radius: 4px;
-			background-color: #fafafa;
-		}
-		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-		  color: #afafaf;
-		  opacity: 1; /* Firefox */
-		  font-weight: 200;
-		}
-		.kotak-ig>div{
-			margin-left:10%;
-			margin-right: 10%;
-		}
-		.text-ig{
-			margin-bottom: 8px;
-		}
-		.foto-ig{
-			margin-top: 40px;
-		}
-		.logo-ig{
-			width: 175px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 30px;
-		}
-		#info-text{
-			text-align: center;
-			font-size: 14px;
-			font-weight: 400; 
-			color: #666666;
-		}
-		.daftar-ig{
-			background-color: #468FF4;
-			color: white;
-			max-width: 100%;
+<meta charset="UTF-8">
+<title>Log-In</title>
+<meta name="viewport" content="width=device, initial-scale=1.0" />
+<link rel="stylesheet" href="uikit.css">
+<script src="uikit.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<style>	
+	html{
+		background-color: #fafafafa;
+	}
+	.kotak-ig{
+		background-color: #ffffff;
+		width: 340px;
+		height: 340px;
+		margin:auto;
+		margin-top: 30px;
+		border:1px solid #e6e6e6;
+	}
+	.kotak-input>input{
+		width: 95%;		
+		margin-bottom: 12px;
+		border: 1px solid #e6e6e6;
+		max-height: 21px;
+		height: 21px;
+		padding: 6px;
+		border-radius: 4px;
+		background-color: #fafafa;
+	}
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	  color: #afafaf;
+	  opacity: 1; /* Firefox */
+	  font-weight: 200;
+	}
+	.kotak-ig>div{
+		margin-left:10%;
+		margin-right: 10%;
+	}
+	.text-ig{
+		margin-bottom: 20px;
+	}
+	.foto-ig{
+		margin-top: 40px;
+	}
+	.logo-ig{
+		width: 175px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	#info-text{
+		text-align: center;
+		font-size: 14px;
+		font-weight: 400; 
+		color: #666666;
+	}
+	.daftar-ig{
+		background-color: #468FF4;
+		color: white;
+		max-width: 100%;
+		width: 100%;
+		border:1px solid #e6e6e6;
+		border-radius: 5px;
+		padding: 7px;
+		margin-top: 8px;
+
+	}
+	.kotak-bawah-ig{
+		border:1px solid #e6e6e6;
+		background-color: #ffffff;
+		width: 340px;
+		margin:auto;
+		margin-top: 20px;
+	}
+	@media only screen and (max-width: 680px) {
+		.kotak-ig,.kotak-bawah-ig{
+			max-width:100%;
 			width: 100%;
-			border:1px solid #e6e6e6;
-			border-radius: 3px;
-			padding: 7px;
-			margin-top: 20px;
+			margin: 0 !important;
 		}
 		.kotak-bawah-ig{
-			border:1px solid #e6e6e6;
-			background-color: #ffffff;
-			padding: 10px;
-			width: 340px;
-			margin:auto;
-			margin-top: 20px;
+			margin-top: 10px !important;
+			border: 0;
+			background-color: #fafafa;
 		}
-		@media only screen and (max-width: 680px) {
-		 	.kotak-ig,.kotak-bawah-ig{
-		 		max-width: 290px;
-		 		width: 290px;
-		 	}
+		.kotak-input>input{
+			margin-bottom: 6px !important;
 		}
-		p{
-			margin-bottom: 0;
+		::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+			font-size: 12px;
 		}
-	</style>
+		.daftar-ig{
+			padding: 4px !important;
+			font-size: 12px;
+			font-weight: 500;
+		}
+
+	}
+	p{
+		margin-bottom: 0;
+	}
+	.kotak-bawah-ig>.text-ig>p{
+		margin-top: 13px;
+	}
+</style>
 </head>
 <body>
-	<div class="kotak-ig">
-		<div class="foto-ig">
-			<img class="logo-ig" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="">
-		</div>
-		<div class="text-ig">
-			<p id="info-text">Masukkan alamat email, dan password anda</p>
-		</div>
-		<div class="form-ig">
-			<form action="	">
-				<div class="kotak-input">
-					<input type="" name="" placeholder="Phone number, email">
-				</div>		
-				<div class="kotak-input">	
-					<input type="" name="" placeholder="Password">
-				</div>
-			</form>
-		</div>
-		<div class="button">
-			<button class="daftar-ig">Masuk</button>
-		</div>
+<div class="kotak-ig">
+	<div class="foto-ig">
+		<img class="logo-ig" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png" alt="">
 	</div>
-	<div class="kotak-bawah-ig">	
-		<div class="text-ig">	
-			<p id="info-text">
-				Belum punya akun ? <a href="accountpage.html">Daftar</a>
-			</p>
-		</div>
+	<div class="text-ig">
+		<p id="info-text">Masukkan alamat email, dan password anda</p>
 	</div>
-	
+	<div class="form-ig">
+		<form action="	">
+			<div class="kotak-input">
+				<input type="" name="" placeholder="Phone number, email, username">
+			</div>		
+			<div class="kotak-input">	
+				<input type="" name="" placeholder="Password">
+			</div>
+		</form>
+	</div>
+	<div class="button">
+		<button class="daftar-ig">Masuk</button>
+	</div>
+</div>
+<div class="kotak-bawah-ig">	
+	<div class="text-ig">	
+		<p id="info-text">
+			Belum punya akun ? <a href="">Daftar</a>
+		</p>
+	</div>
+</div>
+
 </body>
 </html>
